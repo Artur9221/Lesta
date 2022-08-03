@@ -4,4 +4,8 @@
 
 C/C++ example:
 
-bool isEven(int value){return value%2==0;}
+1) bool isEven(int value) { return value % 2 == 0; }
+
+2) bool isEven2(int value) { return (value&1) == 1; }
+
+Побитовывые операции опходяться дешевлее для компилчтора, поэтому вторая реализация будет быстрее. 
