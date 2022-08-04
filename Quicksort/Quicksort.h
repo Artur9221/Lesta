@@ -21,13 +21,10 @@ void quicksort(int arr[], int start, int end)
 	{
 		return;
 	}
-	// переставить элементы по оси
 	int pivot = partition(arr, start, end);
 
-	// повторяем подмассив, содержащий элементы, меньшие опорной точки
-	quicksort(arr, start, pivot - 1);
 
-	// повторяем подмассив, содержащий элементы, превышающие точку опоры
+	quicksort(arr, start, pivot - 1);
 	quicksort(arr, pivot + 1, end);
 
 }
