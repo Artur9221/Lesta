@@ -6,6 +6,6 @@ C/C++ example:
 
 1) bool isEven(int value) { return value % 2 == 0; }
 
-2) bool isEven2(int value) { return (value&1) == 1; }
+2) bool isEven2(int value) { return (value&1) == 0; }
 
 Побитовые операции обходятся дешевле для компилятора, поэтому вторая реализация будет быстрее. 
